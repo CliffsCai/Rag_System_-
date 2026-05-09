@@ -155,13 +155,13 @@
 
 ```Plain Text
 graph LR
-    A[用户提问] --> B[query_rewrite\n多轮指代消解]
-    B --> C[query_classify\nsingle / multi]
+    A[用户提问] --> B[query_rewrite<br/>多轮指代消解]
+    B --> C[query_classify<br/>single / multi]
     C --> D{路由}
     D -->|single_doc| E[single_doc_retrieve]
-    D -->|multi_doc| F[multi_doc_retrieve\n分组搜索]
+    D -->|multi_doc| F[multi_doc_retrieve<br/>分组搜索]
     F --> G[filter_chunks]
-    G --> H[select_top_k\n/ rerank]
+    G --> H[select_top_k<br/>/ rerank]
     E --> H
     H --> I[generate_answer]
     I --> J[quality_check]
