@@ -153,7 +153,7 @@
 
 系统基于LangGraph搭建标准化RAG问答流水线，流程闭环、逻辑严谨、可定制拓展。
 
-```Plain Text
+```mermaid
 graph LR
     A[用户提问] --> B[query_rewrite<br/>多轮指代消解]
     B --> C[query_classify<br/>single / multi]
@@ -166,7 +166,7 @@ graph LR
     H --> I[generate_answer]
     I --> J[quality_check]
     J --> K[finalize_metrics]
-```
+\```
 
 ---
 
