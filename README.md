@@ -166,7 +166,7 @@ graph LR
     H --> I[generate_answer]
     I --> J[quality_check]
     J --> K[finalize_metrics]
-\```
+```
 
 ---
 
